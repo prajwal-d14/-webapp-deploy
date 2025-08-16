@@ -24,11 +24,11 @@ spec:
 apiVersion: v1
 kind: Service   
 metadata:
-  name: calenderapp-service
+  name: webapp-svc
   namespace: default
 spec:
   selector: 
-    app: calenderapp
+    app: webapp
   ports:
     - protocol: TCP
       port: 8081
