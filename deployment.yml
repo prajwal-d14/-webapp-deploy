@@ -17,7 +17,7 @@ spec:
         - name: nexus-credentials
       containers:
       - name: webapp
-        image: 13.127.150.83:31503/docker-repo-bank/webapp:9
+        image: 13.127.150.83:31503/docker-repo-bank/webapp:12
         ports:
         - containerPort: 8081
 ---
