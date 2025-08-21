@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: 43.204.130.40:31503/webapp:21
+        image: 43.204.130.40:31503/docker-repo-bank/webapp:21
         ports:
         - containerPort: 8081
 ---
