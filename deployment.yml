@@ -4,7 +4,7 @@ metadata:
   name: webapp
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: webapp
@@ -13,11 +13,9 @@ spec:
       labels:
         app: webapp
     spec:
-      imagePullSecrets:
-        - name: nexus-credentials
       containers:
       - name: webapp
-        image: 13.127.150.83:31503/docker-repo-bank/webapp:13
+        image: 43.204.130.40:31503/webapp:10
         ports:
         - containerPort: 8081
 ---
